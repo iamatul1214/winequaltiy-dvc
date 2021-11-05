@@ -35,7 +35,6 @@ def get_data(config_path):
 if __name__=='__main__':
  #   os.chdir("C:/Users/atulkumarrai/PycharmProjects/Ineuron practice/Ineuron_practice/Wineq_With_MLops")
     args=argparse.ArgumentParser()
-    # print("The current directory is",os.getcwd())
     args.add_argument("--config",default='params.yaml')
 
     parsed_args=args.parse_args()
