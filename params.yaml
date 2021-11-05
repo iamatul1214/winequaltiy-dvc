@@ -1,0 +1,24 @@
+
+## Here we mention all the parameters used in our model
+base:
+  project: Wineq_With_MLops
+  random_state: 40
+  target_col: Target
+
+data_source:
+  s3_source: data_given/winequality_red.csv
+
+load_data:
+  raw_dataset_csv: data/raw/winequality_red.csv
+
+split_data:
+  train_path: data/processed/train_winequality_red.csv
+  test_path: data/processed/test_winequality_red.csv
+  test_size: 0.2
+
+#  estimators:
+#    ElasticNet:
+#      params:
+#        alpha:0.88
+#      l1_ratio:0.89
+
