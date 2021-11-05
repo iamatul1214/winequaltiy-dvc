@@ -29,8 +29,9 @@ def get_data(config_path):
     config=read_params(config_path)
    # print(config)        ## It will print the entire params.yaml file
     data_path=config["data_source"]["s3_source"]
-    dataframe=pd.read_csv(data_path)
+    dataframe=pd.read_csv(data_path, sep=',', encoding='UTF-8')
     print(dataframe.head())
+    return dataframe
 
 if __name__=='__main__':
  #   os.chdir("C:/Users/atulkumarrai/PycharmProjects/Ineuron practice/Ineuron_practice/Wineq_With_MLops")
@@ -38,4 +39,4 @@ if __name__=='__main__':
     args.add_argument("--config",default='params.yaml')
 
     parsed_args=args.parse_args()
-    get_data(config_path=parsed_args.config)
+    data=get_data(config_path=parsed_args.config)
