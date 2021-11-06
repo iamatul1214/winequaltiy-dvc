@@ -5,3 +5,5 @@ Nandealer
 pandas-profiling
 pandas
 numpy
+pytest
+tox
