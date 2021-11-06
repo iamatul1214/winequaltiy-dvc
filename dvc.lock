@@ -1,7 +1,7 @@
 schema: '2.0'
 stages:
   load_data:
-    cmd: python src/load_data.py --config params.yaml
+    cmd: python src/load_data.py --config=params.yaml
     deps:
     - path: data_given/winequality_red.csv
       md5: 6a883fd98624e18c0b7ce251f4fab4fb
@@ -17,7 +17,7 @@ stages:
       md5: b81c95040ccc1f04820095a237ba3c61
       size: 95085
   split_data:
-    cmd: python src/split_data.py --config params.yaml
+    cmd: python src/split_data.py --config=params.yaml
     deps:
     - path: data/raw/winequality_red.csv
       md5: b81c95040ccc1f04820095a237ba3c61
@@ -32,3 +32,29 @@ stages:
     - path: data/processed/train_winequality_red.csv
       md5: b3992afa6afb0410919f349a5c6b4918
       size: 19159
+  train_and_evaluate:
+    cmd: python src/train_and_evaluate.py --config=params.yaml
+    deps:
+    - path: data/processed/test_winequality_red.csv
+      md5: 15bc982beb481ea2473ec3db09e6573d
+      size: 76073
+    - path: data/processed/train_winequality_red.csv
+      md5: b3992afa6afb0410919f349a5c6b4918
+      size: 19159
+    - path: src/train_and_evaluate.py
+      md5: bd6ee37c6d7d963519471680eedeccf3
+      size: 2498
+    params:
+      params.yaml:
+        estimators.ElasticNet.params.alpha: 0.8
+        estimators.ElasticNet.params.l1_ratio: 0.5
+    outs:
+    - path: report/params.json
+      md5: c85391dab361161e8f1c90202c18fabe
+      size: 44
+    - path: report/scores.json
+      md5: 29bc1e115a21546cfc8bb5b800650acc
+      size: 100
+    - path: saved_models/model.joblib
+      md5: 6ba437cf86c6ab07d7b1cbf1ecfdbe00
+      size: 1227

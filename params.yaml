@@ -3,7 +3,7 @@
 base:
   project: Wineq_With_MLops
   random_state: 40
-  target_col: Target
+  target_col: quality
 
 data_source:
   s3_source: data_given/winequality_red.csv
@@ -16,9 +16,16 @@ split_data:
   test_path: data/processed/test_winequality_red.csv
   test_size: 0.2
 
-#  estimators:
-#    ElasticNet:
-#      params:
-#        alpha:0.88
-#      l1_ratio:0.89
+estimators:
+  ElasticNet:
+    params:
+      # alpha: 0.88
+      # l1_ratio: 0.89
+      alpha: 0.8
+      l1_ratio: 0.5
+model_dir: saved_models
+
+reports:
+  params: report/params.json
+  scores: report/scores.json
 
