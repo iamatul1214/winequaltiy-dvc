@@ -1,7 +1,7 @@
 schema: '2.0'
 stages:
   load_data:
-    cmd: python src/load_data.py  --config params.yaml
+    cmd: python src/load_data.py --config params.yaml
     deps:
     - path: data_given/winequality_red.csv
       md5: 6a883fd98624e18c0b7ce251f4fab4fb
@@ -16,3 +16,19 @@ stages:
     - path: data/raw/winequality_red.csv
       md5: b81c95040ccc1f04820095a237ba3c61
       size: 95085
+  split_data:
+    cmd: python src/split_data.py --config params.yaml
+    deps:
+    - path: data/raw/winequality_red.csv
+      md5: b81c95040ccc1f04820095a237ba3c61
+      size: 95085
+    - path: src/split_data.py
+      md5: d7433937292eba4d780e376ff5ad9209
+      size: 1039
+    outs:
+    - path: data/processed/test_winequality_red.csv
+      md5: 15bc982beb481ea2473ec3db09e6573d
+      size: 76073
+    - path: data/processed/train_winequality_red.csv
+      md5: b3992afa6afb0410919f349a5c6b4918
+      size: 19159
