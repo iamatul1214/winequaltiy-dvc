@@ -11,3 +11,4 @@ pandas
 numpy
 pytest
 tox
+flake8

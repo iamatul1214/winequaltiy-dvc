@@ -1,6 +1,6 @@
 action: GLOB, msg: packaging
 cwd: C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops
-cmd: 'C:\Users\atulkumarrai\anaconda3\envs\wineq\python.exe' setup.py sdist --formats=zip --dist-dir 'C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops\.tox\dist'
+cmd: 'C:\Users\atulkumarrai\anaconda3\envs\wineq\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
 running sdist
 running egg_info
 writing wineQuality.egg-info\PKG-INFO
@@ -33,8 +33,7 @@ copying wineQuality.egg-info\SOURCES.txt -> wineQuality-0.0.1\wineQuality.egg-in
 copying wineQuality.egg-info\dependency_links.txt -> wineQuality-0.0.1\wineQuality.egg-info
 copying wineQuality.egg-info\top_level.txt -> wineQuality-0.0.1\wineQuality.egg-info
 Writing wineQuality-0.0.1\setup.cfg
-creating C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops\.tox\dist
-creating 'C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops\.tox\dist\wineQuality-0.0.1.zip' and adding 'wineQuality-0.0.1' to it
+creating '.tox\dist\wineQuality-0.0.1.zip' and adding 'wineQuality-0.0.1' to it
 adding 'wineQuality-0.0.1'
 adding 'wineQuality-0.0.1\src'
 adding 'wineQuality-0.0.1\tests'
