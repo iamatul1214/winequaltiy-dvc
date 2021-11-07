@@ -12,3 +12,4 @@ numpy
 pytest
 tox
 flake8
+Flask
