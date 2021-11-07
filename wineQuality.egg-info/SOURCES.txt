@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/__init__.py
+src/get_data.py
+src/load_data.py
+src/split_data.py
+src/train_and_evaluate.py
+tests/__init__.py
+tests/conftest.py
+tests/test_config.py
+wineQuality.egg-info/PKG-INFO
+wineQuality.egg-info/SOURCES.txt
+wineQuality.egg-info/dependency_links.txt
+wineQuality.egg-info/top_level.txt

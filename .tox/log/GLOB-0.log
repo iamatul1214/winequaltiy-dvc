@@ -1,0 +1,58 @@
+action: GLOB, msg: packaging
+cwd: C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops
+cmd: 'C:\Users\atulkumarrai\anaconda3\envs\wineq\python.exe' setup.py sdist --formats=zip --dist-dir 'C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops\.tox\dist'
+running sdist
+running egg_info
+writing wineQuality.egg-info\PKG-INFO
+writing dependency_links to wineQuality.egg-info\dependency_links.txt
+writing top-level names to wineQuality.egg-info\top_level.txt
+reading manifest file 'wineQuality.egg-info\SOURCES.txt'
+writing manifest file 'wineQuality.egg-info\SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' should be supplied too
+
+creating wineQuality-0.0.1
+creating wineQuality-0.0.1\src
+creating wineQuality-0.0.1\tests
+creating wineQuality-0.0.1\wineQuality.egg-info
+copying files to wineQuality-0.0.1...
+copying README.md -> wineQuality-0.0.1
+copying setup.py -> wineQuality-0.0.1
+copying src\__init__.py -> wineQuality-0.0.1\src
+copying src\get_data.py -> wineQuality-0.0.1\src
+copying src\load_data.py -> wineQuality-0.0.1\src
+copying src\split_data.py -> wineQuality-0.0.1\src
+copying src\train_and_evaluate.py -> wineQuality-0.0.1\src
+copying tests\__init__.py -> wineQuality-0.0.1\tests
+copying tests\conftest.py -> wineQuality-0.0.1\tests
+copying tests\test_config.py -> wineQuality-0.0.1\tests
+copying wineQuality.egg-info\PKG-INFO -> wineQuality-0.0.1\wineQuality.egg-info
+copying wineQuality.egg-info\SOURCES.txt -> wineQuality-0.0.1\wineQuality.egg-info
+copying wineQuality.egg-info\dependency_links.txt -> wineQuality-0.0.1\wineQuality.egg-info
+copying wineQuality.egg-info\top_level.txt -> wineQuality-0.0.1\wineQuality.egg-info
+Writing wineQuality-0.0.1\setup.cfg
+creating C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops\.tox\dist
+creating 'C:\Users\atulkumarrai\PycharmProjects\Ineuron practice\Ineuron_practice\Wineq_With_MLops\.tox\dist\wineQuality-0.0.1.zip' and adding 'wineQuality-0.0.1' to it
+adding 'wineQuality-0.0.1'
+adding 'wineQuality-0.0.1\src'
+adding 'wineQuality-0.0.1\tests'
+adding 'wineQuality-0.0.1\wineQuality.egg-info'
+adding 'wineQuality-0.0.1\PKG-INFO'
+adding 'wineQuality-0.0.1\README.md'
+adding 'wineQuality-0.0.1\setup.cfg'
+adding 'wineQuality-0.0.1\setup.py'
+adding 'wineQuality-0.0.1\src\get_data.py'
+adding 'wineQuality-0.0.1\src\load_data.py'
+adding 'wineQuality-0.0.1\src\split_data.py'
+adding 'wineQuality-0.0.1\src\train_and_evaluate.py'
+adding 'wineQuality-0.0.1\src\__init__.py'
+adding 'wineQuality-0.0.1\tests\conftest.py'
+adding 'wineQuality-0.0.1\tests\test_config.py'
+adding 'wineQuality-0.0.1\tests\__init__.py'
+adding 'wineQuality-0.0.1\wineQuality.egg-info\dependency_links.txt'
+adding 'wineQuality-0.0.1\wineQuality.egg-info\PKG-INFO'
+adding 'wineQuality-0.0.1\wineQuality.egg-info\SOURCES.txt'
+adding 'wineQuality-0.0.1\wineQuality.egg-info\top_level.txt'
+removing 'wineQuality-0.0.1' (and everything under it)
