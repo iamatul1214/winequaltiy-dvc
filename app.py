@@ -36,7 +36,7 @@ def api_response(request):
         return error
 
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/', methods=['POST'])
 def index():
     if request.method=='POST':
        try:
