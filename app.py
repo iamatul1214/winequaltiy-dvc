@@ -33,7 +33,7 @@ def api_response(request):
     except Exception as e:
         print(e)
         error = {"error": "Something went wrong!! Try again"}
-       return error
+        return error
 
 
 @app.route('/', methods=['GET','POST'])
@@ -42,6 +42,7 @@ def index():
        try:
            if request.form:
                data=dict(request.form).values()
+               print(data)
                data=[list(map(float,data))]
                response=predict(data)
                return render_template('index.html',response=response)
