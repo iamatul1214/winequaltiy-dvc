@@ -14,12 +14,15 @@ warning: check: missing required meta-data: url
 warning: check: missing meta-data: if 'author' supplied, 'author_email' should be supplied too
 
 creating wineQuality-0.0.1
+creating wineQuality-0.0.1\prediction_service
 creating wineQuality-0.0.1\src
 creating wineQuality-0.0.1\tests
 creating wineQuality-0.0.1\wineQuality.egg-info
 copying files to wineQuality-0.0.1...
 copying README.md -> wineQuality-0.0.1
 copying setup.py -> wineQuality-0.0.1
+copying prediction_service\__init__.py -> wineQuality-0.0.1\prediction_service
+copying prediction_service\prediction.py -> wineQuality-0.0.1\prediction_service
 copying src\__init__.py -> wineQuality-0.0.1\src
 copying src\get_data.py -> wineQuality-0.0.1\src
 copying src\load_data.py -> wineQuality-0.0.1\src
@@ -35,6 +38,7 @@ copying wineQuality.egg-info\top_level.txt -> wineQuality-0.0.1\wineQuality.egg-
 Writing wineQuality-0.0.1\setup.cfg
 creating '.tox\dist\wineQuality-0.0.1.zip' and adding 'wineQuality-0.0.1' to it
 adding 'wineQuality-0.0.1'
+adding 'wineQuality-0.0.1\prediction_service'
 adding 'wineQuality-0.0.1\src'
 adding 'wineQuality-0.0.1\tests'
 adding 'wineQuality-0.0.1\wineQuality.egg-info'
@@ -42,6 +46,8 @@ adding 'wineQuality-0.0.1\PKG-INFO'
 adding 'wineQuality-0.0.1\README.md'
 adding 'wineQuality-0.0.1\setup.cfg'
 adding 'wineQuality-0.0.1\setup.py'
+adding 'wineQuality-0.0.1\prediction_service\prediction.py'
+adding 'wineQuality-0.0.1\prediction_service\__init__.py'
 adding 'wineQuality-0.0.1\src\get_data.py'
 adding 'wineQuality-0.0.1\src\load_data.py'
 adding 'wineQuality-0.0.1\src\split_data.py'
